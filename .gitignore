@@ -1,0 +1,15 @@
+.DS_Store
+.workbuddy/
+.build/
+build/
+dist/
+node_modules/
+DerivedData/
+.gradle/
+.cxx/
+local.properties
+*.zip
+engine/vendor/rapfi/
+engine/vendor/rapfi-networks/
+engine/runtime/
+*.log

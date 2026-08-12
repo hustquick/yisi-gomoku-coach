@@ -1,0 +1,23 @@
+Rapfi source and build information
+==================================
+
+Project: Rapfi
+License: GNU General Public License version 3
+Upstream source: https://github.com/dhbloo/rapfi
+Exact source commit: 3c94c2a976f24a0dd1c5517623e9ab6fffe66bd7
+Bundled build: WebAssembly, single-threaded, SIMD128, embedded data files
+
+Network repository: https://github.com/dhbloo/rapfi-networks
+Exact network commit: e32ad77a5364363b3e3a02b3f9e8610ade19ea98
+
+Build configuration:
+- Release / O3 / LTO
+- NO_COMMAND_MODULES=ON
+- NO_MULTI_THREADING=ON
+- USE_WASM_SIMD=ON
+- USE_WASM_SIMD_RELAXED=OFF
+- Emscripten SINGLE_FILE=1
+- Configurations and network files embedded in rapfi.js
+
+For redistribution, keep this file, Rapfi-GPL-3.0.txt and
+rapfi-networks-LICENSE.txt together with rapfi.js.

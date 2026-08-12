@@ -1,0 +1,134 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42B38D92D65B9FED8753C3E2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B177F71919F3F1954FEC147 /* Models.swift */; };
+		5FEC72E341DE8B6EE51785C7 /* RapfiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957884F029BEEFA7E7B69893 /* RapfiService.swift */; };
+		DE156BDE6F096022B687C991 /* CoachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C674C49F9230A78013C04 /* CoachViewModel.swift */; };
+		3E752032C9B2BC7158D0AD2C /* GomokuBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E3FF2552BD8C41540880A6 /* GomokuBoardView.swift */; };
+		95A27E5D54C3AC3DE8B21F06 /* SituationChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFC80628C6ED48441B5DEE /* SituationChartView.swift */; };
+		FBD82B67A76725BA312E3C62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA066BDAE191C6841E031821 /* ContentView.swift */; };
+		378A263F28FE2DD99BC97460 /* YisiGomokuCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999E2FEAE049DF860EDB110 /* YisiGomokuCoachApp.swift */; };
+		6E9E0DDABAA154657ED34E67 /* RapfiBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7552EDEB2A47AD9ED100131A /* RapfiBridge.mm */; };
+		2AA1EC5B3154FCAC2D91AFB5 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D3A9120341B20E5418773811 /* AppIcon.png */; };
+		A93408E6930566449BF87748 /* AppIconDark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C75091F7640E5D2B10E4216 /* AppIconDark.png */; };
+		C1A601A8AB7E772B534C5249 /* config.toml in Resources */ = {isa = PBXBuildFile; fileRef = BDA2E7ADD035B9BAEBB2AE89 /* config.toml */; };
+		9EC0E120F4374483C515671D /* model210901.bin in Resources */ = {isa = PBXBuildFile; fileRef = 9F0CF62630907BFF73527D59 /* model210901.bin */; };
+		FA5EFD0715088AFE21DF3C73 /* mix9svqfreestyle_bsmix.bin.lz4 in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE257404255FA96502915D /* mix9svqfreestyle_bsmix.bin.lz4 */; };
+		5F6E5164B9F96FF97B725113 /* mix9svqrenju_bs15_black.bin.lz4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A33511CD1922433D02F61F9 /* mix9svqrenju_bs15_black.bin.lz4 */; };
+		C2025F2DA2663078DA5D2CF7 /* mix9svqrenju_bs15_white.bin.lz4 in Resources */ = {isa = PBXBuildFile; fileRef = 6B581D7430707C006FE9C957 /* mix9svqrenju_bs15_white.bin.lz4 */; };
+		3B298D03498640FC814242E5 /* mix9svqstandard_bs15.bin.lz4 in Resources */ = {isa = PBXBuildFile; fileRef = 7B5087DCE88D30FE9AD40DF6 /* mix9svqstandard_bs15.bin.lz4 */; };
+		E774D02BA2A1DBCB838CE97D /* RAPFI-GPL-3.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6113D9A5909634561F136517 /* RAPFI-GPL-3.0.txt */; };
+		600416273A0BF1479987978E /* Rapfi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173A88139054ABDC0980AEF8 /* Rapfi.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B177F71919F3F1954FEC147 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/Models.swift; sourceTree = "<group>"; };
+		957884F029BEEFA7E7B69893 /* RapfiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/RapfiService.swift; sourceTree = "<group>"; };
+		7E3C674C49F9230A78013C04 /* CoachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/CoachViewModel.swift; sourceTree = "<group>"; };
+		20E3FF2552BD8C41540880A6 /* GomokuBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/GomokuBoardView.swift; sourceTree = "<group>"; };
+		14AFC80628C6ED48441B5DEE /* SituationChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/SituationChartView.swift; sourceTree = "<group>"; };
+		BA066BDAE191C6841E031821 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/ContentView.swift; sourceTree = "<group>"; };
+		8999E2FEAE049DF860EDB110 /* YisiGomokuCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/YisiGomokuCoachApp.swift; sourceTree = "<group>"; };
+		7552EDEB2A47AD9ED100131A /* RapfiBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Bridge/RapfiBridge.mm; sourceTree = "<group>"; };
+		D3A9120341B20E5418773811 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App/Resources/AppIcon.png; sourceTree = "<group>"; };
+		3C75091F7640E5D2B10E4216 /* AppIconDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App/Resources/AppIconDark.png; sourceTree = "<group>"; };
+		BDA2E7ADD035B9BAEBB2AE89 /* config.toml */ = {isa = PBXFileReference; lastKnownFileType = text; path = App/Resources/config.toml; sourceTree = "<group>"; };
+		9F0CF62630907BFF73527D59 /* model210901.bin */ = {isa = PBXFileReference; lastKnownFileType = file; path = App/Resources/model210901.bin; sourceTree = "<group>"; };
+		8EDE257404255FA96502915D /* mix9svqfreestyle_bsmix.bin.lz4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = App/Resources/mix9svqfreestyle_bsmix.bin.lz4; sourceTree = "<group>"; };
+		8A33511CD1922433D02F61F9 /* mix9svqrenju_bs15_black.bin.lz4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = App/Resources/mix9svqrenju_bs15_black.bin.lz4; sourceTree = "<group>"; };
+		6B581D7430707C006FE9C957 /* mix9svqrenju_bs15_white.bin.lz4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = App/Resources/mix9svqrenju_bs15_white.bin.lz4; sourceTree = "<group>"; };
+		7B5087DCE88D30FE9AD40DF6 /* mix9svqstandard_bs15.bin.lz4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = App/Resources/mix9svqstandard_bs15.bin.lz4; sourceTree = "<group>"; };
+		6113D9A5909634561F136517 /* RAPFI-GPL-3.0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = App/Resources/RAPFI-GPL-3.0.txt; sourceTree = "<group>"; };
+		7B594B6DB375E1BF3F23CDD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = App/Info.plist; sourceTree = "<group>"; };
+		587D65477DC458DEB404DC42 /* RapfiBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge/RapfiBridge.h; sourceTree = "<group>"; };
+		173A88139054ABDC0980AEF8 /* Rapfi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Engine/Rapfi.xcframework; sourceTree = "<group>"; };
+		38A007151ABE87CC01A5B6E9 /* YisiGomokuCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YisiGomokuCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69680EDE0CF9B24DB8DBFE04 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (600416273A0BF1479987978E /* Rapfi.xcframework in Frameworks */,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		870B3294C0CBD48AF6BBCC1B = {isa = PBXGroup; children = (3C3B0F03DC089F93B8457928 /* App */, 5659C40F7A132DCA974AC585 /* Bridge */, ED3E619E863405ADE8BDB385 /* Engine */, 7168E62E5CDB0DF79ADF5742 /* Products */,); sourceTree = "<group>"; };
+		3C3B0F03DC089F93B8457928 /* App */ = {isa = PBXGroup; children = (
+				4B177F71919F3F1954FEC147 /* Models.swift */,
+				957884F029BEEFA7E7B69893 /* RapfiService.swift */,
+				7E3C674C49F9230A78013C04 /* CoachViewModel.swift */,
+				20E3FF2552BD8C41540880A6 /* GomokuBoardView.swift */,
+				14AFC80628C6ED48441B5DEE /* SituationChartView.swift */,
+				BA066BDAE191C6841E031821 /* ContentView.swift */,
+				8999E2FEAE049DF860EDB110 /* YisiGomokuCoachApp.swift */,
+				D3A9120341B20E5418773811 /* AppIcon.png */,
+				3C75091F7640E5D2B10E4216 /* AppIconDark.png */,
+				BDA2E7ADD035B9BAEBB2AE89 /* config.toml */,
+				9F0CF62630907BFF73527D59 /* model210901.bin */,
+				8EDE257404255FA96502915D /* mix9svqfreestyle_bsmix.bin.lz4 */,
+				8A33511CD1922433D02F61F9 /* mix9svqrenju_bs15_black.bin.lz4 */,
+				6B581D7430707C006FE9C957 /* mix9svqrenju_bs15_white.bin.lz4 */,
+				7B5087DCE88D30FE9AD40DF6 /* mix9svqstandard_bs15.bin.lz4 */,
+				6113D9A5909634561F136517 /* RAPFI-GPL-3.0.txt */,
+				7B594B6DB375E1BF3F23CDD6 /* Info.plist */,
+			); name = App; sourceTree = "<group>"; };
+		5659C40F7A132DCA974AC585 /* Bridge */ = {isa = PBXGroup; children = (
+				7552EDEB2A47AD9ED100131A /* RapfiBridge.mm */,
+				587D65477DC458DEB404DC42 /* RapfiBridge.h */,
+			); name = Bridge; sourceTree = "<group>"; };
+		ED3E619E863405ADE8BDB385 /* Engine */ = {isa = PBXGroup; children = (173A88139054ABDC0980AEF8 /* Rapfi.xcframework */,); name = Engine; sourceTree = "<group>"; };
+		7168E62E5CDB0DF79ADF5742 /* Products */ = {isa = PBXGroup; children = (38A007151ABE87CC01A5B6E9 /* YisiGomokuCoach.app */,); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E8A3AD980EC179856012B7E /* YisiGomokuCoach */ = {isa = PBXNativeTarget; buildConfigurationList = 976B52545947CA66FD9EF2A4; buildPhases = (F612CD2E22E187AC48B5913C, 69680EDE0CF9B24DB8DBFE04, 86F6FE2DD6E869C1842A14B3); buildRules = (); dependencies = (); name = YisiGomokuCoach; productName = YisiGomokuCoach; productReference = 38A007151ABE87CC01A5B6E9; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2650; LastUpgradeCheck = 2650; TargetAttributes = {0E8A3AD980EC179856012B7E = {CreatedOnToolsVersion = 26.5; }; }; }; buildConfigurationList = 640DC9EFD529235A8D9E2727; developmentRegion = zh_CN; hasScannedForEncodings = 0; knownRegions = (zh_CN, en, Base); mainGroup = 870B3294C0CBD48AF6BBCC1B; productRefGroup = 7168E62E5CDB0DF79ADF5742; projectDirPath = ""; projectRoot = ""; targets = (0E8A3AD980EC179856012B7E); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86F6FE2DD6E869C1842A14B3 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+				2AA1EC5B3154FCAC2D91AFB5 /* AppIcon.png in Resources */,
+				A93408E6930566449BF87748 /* AppIconDark.png in Resources */,
+				C1A601A8AB7E772B534C5249 /* config.toml in Resources */,
+				9EC0E120F4374483C515671D /* model210901.bin in Resources */,
+				FA5EFD0715088AFE21DF3C73 /* mix9svqfreestyle_bsmix.bin.lz4 in Resources */,
+				5F6E5164B9F96FF97B725113 /* mix9svqrenju_bs15_black.bin.lz4 in Resources */,
+				C2025F2DA2663078DA5D2CF7 /* mix9svqrenju_bs15_white.bin.lz4 in Resources */,
+				3B298D03498640FC814242E5 /* mix9svqstandard_bs15.bin.lz4 in Resources */,
+				E774D02BA2A1DBCB838CE97D /* RAPFI-GPL-3.0.txt in Resources */,
+			); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F612CD2E22E187AC48B5913C /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				42B38D92D65B9FED8753C3E2 /* Models.swift in Sources */,
+				5FEC72E341DE8B6EE51785C7 /* RapfiService.swift in Sources */,
+				DE156BDE6F096022B687C991 /* CoachViewModel.swift in Sources */,
+				3E752032C9B2BC7158D0AD2C /* GomokuBoardView.swift in Sources */,
+				95A27E5D54C3AC3DE8B21F06 /* SituationChartView.swift in Sources */,
+				FBD82B67A76725BA312E3C62 /* ContentView.swift in Sources */,
+				378A263F28FE2DD99BC97460 /* YisiGomokuCoachApp.swift in Sources */,
+				6E9E0DDABAA154657ED34E67 /* RapfiBridge.mm in Sources */,
+			); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		413A043F17974B31D5DED153 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_CXX_LIBRARY = "libc++"; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; }; name = Debug; };
+		20CC6DB161E5F84AFC48BDEB /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_CXX_LIBRARY = "libc++"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; VALIDATE_PRODUCT = YES; }; name = Release; };
+		FE30E34D2E074F83C0BB8B14 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; ARCHS = arm64; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = BKLF8453MJ; HEADER_SEARCH_PATHS = ("$(inherited)", "$(PROJECT_DIR)/../engine/vendor/rapfi/Rapfi", "$(PROJECT_DIR)/../engine/vendor/rapfi/Rapfi/external/cpptoml/include", "$(PROJECT_DIR)/../engine/vendor/rapfi/Rapfi/external/lz4/include", "$(PROJECT_DIR)/../engine/vendor/rapfi/Rapfi/external/simde/include"); INFOPLIST_FILE = App/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); LIBRARY_SEARCH_PATHS = ("$(inherited)", "$(PROJECT_DIR)/Engine"); MARKETING_VERSION = 1.0; OTHER_CPLUSPLUSFLAGS = ("$(inherited)", "-fexceptions", "-Wno-deprecated-enum-enum-conversion"); PRODUCT_BUNDLE_IDENTIFIER = com.yisi.gomokucoach; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_OBJC_BRIDGING_HEADER = Bridge/RapfiBridge.h; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		8DB33D080F2095ABF270D5AF /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; ARCHS = arm64; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = BKLF8453MJ; HEADER_SEARCH_PATHS = ("$(inherited)", "$(PROJECT_DIR)/../engine/vendor/rapfi/Rapfi", "$(PROJECT_DIR)/../engine/vendor/rapfi/Rapfi/external/cpptoml/include", "$(PROJECT_DIR)/../engine/vendor/rapfi/Rapfi/external/lz4/include", "$(PROJECT_DIR)/../engine/vendor/rapfi/Rapfi/external/simde/include"); INFOPLIST_FILE = App/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); LIBRARY_SEARCH_PATHS = ("$(inherited)", "$(PROJECT_DIR)/Engine"); MARKETING_VERSION = 1.0; OTHER_CPLUSPLUSFLAGS = ("$(inherited)", "-fexceptions", "-Wno-deprecated-enum-enum-conversion"); PRODUCT_BUNDLE_IDENTIFIER = com.yisi.gomokucoach; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_OBJC_BRIDGING_HEADER = Bridge/RapfiBridge.h; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		640DC9EFD529235A8D9E2727 = {isa = XCConfigurationList; buildConfigurations = (413A043F17974B31D5DED153, 20CC6DB161E5F84AFC48BDEB); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		976B52545947CA66FD9EF2A4 = {isa = XCConfigurationList; buildConfigurations = (FE30E34D2E074F83C0BB8B14, 8DB33D080F2095ABF270D5AF); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0;
+}

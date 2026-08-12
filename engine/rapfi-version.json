@@ -1,0 +1,11 @@
+{
+  "engine": {
+    "repository": "https://github.com/dhbloo/rapfi.git",
+    "commit": "3c94c2a976f24a0dd1c5517623e9ab6fffe66bd7",
+    "license": "GPL-3.0"
+  },
+  "networks": {
+    "repository": "https://github.com/dhbloo/rapfi-networks.git",
+    "commit": "e32ad77a5364363b3e3a02b3f9e8610ade19ea98"
+  }
+}

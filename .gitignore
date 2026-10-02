@@ -1,4 +1,5 @@
 .DS_Store
+/windowsHTML/node_modules/
 .workbuddy/
 .build/
 build/

@@ -230,6 +230,7 @@ footer {
 }
 .board-column {
   min-width: 0;
+  width: min(100%, calc(100dvh - 112px));
 }
 .panel-column {
   min-width: 0;
@@ -780,11 +781,21 @@ footer p {
     font-size: 9px;
   }
   .board-toolbar {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto auto 1fr;
+    min-height: 44px;
   }
   .board-toolbar > div {
-    grid-column: 1/-1;
-    justify-content: center;
+    grid-column: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+  .board-toolbar > strong {
+    font-size: 14px;
+  }
+  .board-toolbar button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
   }
   .situation-heading {
     align-items: flex-start;

@@ -145,6 +145,9 @@ public final class MainActivity extends Activity {
     private void analyzeCurrent() {
         if ("setup".equals(mode) || winner(stones)!=0 || stones.size()>=225) { refreshBoard(); return; }
         int id=generation.incrementAndGet(), side=turn, ply=stones.size(), selectedDepth=depth;
+        boolean computerTurn="computer".equals(mode) && side!=human;
+        int requestedPV=computerTurn?1:5;
+        int searchBudget=computerTurn?computerBudget(selectedDepth):budget(selectedDepth);
         RapfiNative.stop();
         List<Stone> snapshot=new ArrayList<>(stones);
         if (snapshot.isEmpty()) {
@@ -160,7 +163,7 @@ public final class MainActivity extends Activity {
         engineState.setText("Rapfi 深度 "+selectedDepth+" 计算中…（仍可落子）"); summary.setText("当前局面正在计算，未完成前不显示猜测分数。");
         engine.execute(() -> {
             if (generation.get()!=id) return;
-            String raw=RapfiNative.analyze(configFile.getAbsolutePath(), commands(snapshot,side,selectedDepth,5), budget(selectedDepth)+4500);
+            String raw=RapfiNative.analyze(configFile.getAbsolutePath(), commands(snapshot,side,selectedDepth,requestedPV,searchBudget), searchBudget+1800);
             List<EngineLine> result=RapfiOutput.parse(raw);
             main.post(() -> {
                 if (generation.get()!=id) return;
@@ -196,7 +199,7 @@ public final class MainActivity extends Activity {
 
     private void maybeComputerMove() {
         if (!"computer".equals(mode)||turn==human||lines.isEmpty()||lines.get(0).pv.isEmpty()) return;
-        int[] point=lines.get(0).pv.get(0); main.postDelayed(() -> { if ("computer".equals(mode)&&turn!=human&&!occupied(point[0],point[1])) place(point[0],point[1]); },500);
+        int[] point=lines.get(0).pv.get(0); main.postDelayed(() -> { if ("computer".equals(mode)&&turn!=human&&!occupied(point[0],point[1])) place(point[0],point[1]); },120);
     }
 
     private void rebuildCandidates() {
@@ -253,12 +256,16 @@ public final class MainActivity extends Activity {
     private void styleBest() { if (bestButton!=null) { bestButton.setBackgroundColor(showBest?GREEN:Color.TRANSPARENT); bestButton.setTextColor(showBest?Color.WHITE:Color.rgb(92,91,85)); } }
 
     private String commands(List<Stone> position,int side,int maxDepth,int multiPV) {
-        StringBuilder text=new StringBuilder("START 15\nYXSHOWINFO\nINFO RULE ").append(ruleCode()).append("\nINFO TIMEOUT_TURN ").append(budget(maxDepth)).append("\nINFO MAX_DEPTH ").append(maxDepth).append("\nINFO SHOW_DETAIL 2\nINFO THREAD_NUM 1\nYXBOARD\n");
+        return commands(position,side,maxDepth,multiPV,budget(maxDepth));
+    }
+    private String commands(List<Stone> position,int side,int maxDepth,int multiPV,int timeBudget) {
+        StringBuilder text=new StringBuilder("START 15\nYXSHOWINFO\nINFO RULE ").append(ruleCode()).append("\nINFO TIMEOUT_TURN ").append(timeBudget).append("\nINFO MAX_DEPTH ").append(maxDepth).append("\nINFO SHOW_DETAIL 2\nINFO THREAD_NUM 1\nYXBOARD\n");
         for (Stone stone:position) text.append(stone.x).append(',').append(stone.y).append(',').append(stone.player).append('\n');
         return text.append("DONE\nYXNBEST ").append(multiPV).append('\n').toString();
     }
     private int ruleCode() { return "standard".equals(rule)?1:"renju".equals(rule)?2:0; }
     private int budget(int value) { return value<=8?1800:value<=10?3000:value<=12?5500:value<=14?9000:15000; }
+    private int computerBudget(int value) { return value<=8?550:value<=10?750:value<=12?950:value<=14?1150:1350; }
     private boolean occupied(int x,int y) { for(Stone s:stones) if(s.x==x&&s.y==y)return true; return false; }
     private static int winner(List<Stone> values) { for(Stone s:values) for(int[] d:new int[][]{{1,0},{0,1},{1,1},{1,-1}}) { int count=1; for(int sign:new int[]{-1,1}) for(int n=1;n<5;n++) { boolean found=false; for(Stone q:values) if(q.player==s.player&&q.x==s.x+d[0]*n*sign&&q.y==s.y+d[1]*n*sign){found=true;break;} if(!found)break; count++; } if(count>=5)return s.player; } return 0; }
     private static String pointName(int[] p) { return String.valueOf((char)('A'+p[0]))+(15-p[1]); }

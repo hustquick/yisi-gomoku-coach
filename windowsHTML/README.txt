@@ -8,6 +8,8 @@
 3. 建议使用最新版 Microsoft Edge 或 Google Chrome 打开。
 4. 首次载入本地 Rapfi 引擎可能需要数秒；此过程不需要联网。
 
+本目录同时提供 windowsHTML.zip，方便直接复制到 Windows 后解压使用。
+
 请勿只复制 index.html。index.html、app.js、style.css 和 rapfi.js 必须保持在同一文件夹。
 
 主要功能
@@ -40,4 +42,3 @@
 Rapfi 按 GNU GPL v3 分发，许可全文见 Rapfi-GPL-3.0.txt。
 网络权重许可见 rapfi-networks-LICENSE.txt。
 对应源码与版本信息见 RAPFI-SOURCE.txt。
-
